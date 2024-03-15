@@ -1,7 +1,38 @@
 let box = document.querySelectorAll(".box");
 let restart = document.querySelectorAll(".restart");
-
 let turno = true;
+
+let next = document.getElementById("next");
+let select = document.getElementById("select");
+let area = document.getElementById("area")
+
+
+let selectedDiv = null;
+
+function changeColor(clickedDiv) {
+    if (selectedDiv !== null) {
+        selectedDiv.style.backgroundColor = 'transparent'; 
+        selectedDiv.style.color = 'white';
+    }
+
+    clickedDiv.style.backgroundColor = 'white'; 
+    clickedDiv.style.color = 'black';
+    
+    selectedDiv = clickedDiv;
+}
+
+next.addEventListener("click",()=>{
+    if (selectedDiv === null) {
+        alert("Please select a option before proceeding.");
+        return; 
+    }
+
+    select.style.display="none"
+    area.style.display= "flex"
+})
+
+
+
 
 let  winPattern = [
     [0,1,2],

@@ -7,7 +7,27 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <div class="area">
+    <div id="select" class="select">
+        <div class="selectionBox">
+            <h1>User Select the Option.</h1>
+            <div class="selectArea">
+                <div class="o">
+                    
+                    <button  onclick="changeColor(this)"  id="check" class="check">O</button>
+                </div>
+
+                <div class="x">
+                    <button  onclick="changeColor(this)" id="check2" class="check">X</button>
+                </div>
+            </div>
+            <button id="next" class="next">NEXT</button>
+
+
+            
+        </div>
+    </div>
+    <div id="area" class="area">
+        
     <div class="main">
       <h1 class="title">Tic-Tac-Toe</h1>
       <div class="game">
@@ -53,6 +73,7 @@
             <button class="restart playagain">PLAY AGAIN</button>
             <button class="restart ">RESTART</button>
         </div>
+        <h1 class="won"># YOU WON</h1>
        
 
       </div>
