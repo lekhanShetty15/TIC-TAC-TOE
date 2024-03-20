@@ -8,47 +8,43 @@
   </head>
   <body>
     <div id="select" class="select">
-        <div class="selectionBox">
-            <h1>User Select the Option.</h1>
-            <div class="selectArea">
-                <div class="o">
-                    
-                    <button  onclick="changeColor(this)"  id="check" class="check">O</button>
-                </div>
+      <div class="selectionBox">
+        <h1>User Select the Option.</h1>
+        <div class="selectArea">
+          <div class="o">
+            <button onclick="changeColor(this)" id="check" class="check">
+              O
+            </button>
+          </div>
 
-                <div class="x">
-                    <button  onclick="changeColor(this)" id="check2" class="check">X</button>
-                </div>
-            </div>
-            <button  id="next" class="next">NEXT</button>
-
-
-
-            
+          <div class="x">
+            <button onclick="changeColor(this)" id="check2" class="check">
+              X
+            </button>
+          </div>
         </div>
+        <button id="next" class="next">NEXT</button>
+      </div>
     </div>
     <div id="area" class="area">
-        
-    <div class="main">
-      <h1 class="title">Tic-Tac-Toe</h1>
-      <div class="game">
-        <div class="container">
-          <button class="box right"></button>
-          <button class="box right"></button>
-          <button class="box right last"></button>
-          <button class="box right"></button>
-          <button class="box right"></button>
-          <button class="box right last"></button>
-          <button class="box lastright"></button>
-          <button class="box lastright"></button>
-          <button class="box"></button>
+      <div class="main">
+        <h1 class="title">Tic-Tac-Toe</h1>
+        <div class="game">
+          <div class="container">
+            <button class="box right"></button>
+            <button class="box right"></button>
+            <button class="box right last"></button>
+            <button class="box right"></button>
+            <button class="box right"></button>
+            <button class="box right last"></button>
+            <button class="box lastright"></button>
+            <button class="box lastright"></button>
+            <button class="box"></button>
+          </div>
         </div>
       </div>
 
-    </div>
-
-    
-    <div class="main2">
+      <div class="main2">
         <div class="score">
           <div class="computer">
             <div class="comtitle scoreBox">Computer</div>
@@ -58,27 +54,19 @@
           <div class="draw">
             <div class="drawtitle scoreBox">Draw</div>
             <div id="draw" class="drawscore"></div>
-
-
           </div>
 
           <div class="player">
             <div class="playertitle scoreBox">Player</div>
             <div id="player" class="playerscore"></div>
-
-
           </div>
-          
         </div>
-        <div class="button"> 
-            <button class="restart playagain">PLAY AGAIN</button>
-            <button class="restart ">RESTART</button>
+        <div class="button">
+          <button class="playagain">PLAY AGAIN</button>
+          <button class="restart">RESTART</button>
         </div>
-        <h1 class="won"># YOU WON</h1>
-       
-
+        <h1 class="won"></h1>
       </div>
-
     </div>
 
     <script src="./main.js"></script>
